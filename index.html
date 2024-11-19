@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Leslie's Portfolio Site</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <p>Leslie Digsby</p>
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="articles.html">Articles</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
+    <header>
+        <div class="nav-bar">
+            <p>Leslie Digsby</p>
+            <a class="active" href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    
     <div class="sidebar">
         <div class="sidebar-nav">
             <p class="sidebar-name">Leslie Digsby</p>
@@ -25,12 +30,14 @@
         </div>
         <div class="sidebar-projects">
             <p class="sidebar-title">Projects</p>
-            <a class="sidebar-proj-a" href="#">Project1</a>
-            <a class="sidebar-proj-a" href="#">Project2</a>
-            <a class="sidebar-proj-a" href="#">Project3</a>
-            <a class="sidebar-proj-a" href="#">Project4</a>
-            <a class="sidebar-proj-a" href="#">Project5</a>
-            <a class="sidebar-proj-a" href="#">Project6</a>
+            <div class="projects-a-container">
+                <a class="sidebar-proj-a" href="#">Project1</a>
+                <a class="sidebar-proj-a" href="#">Project2</a>
+                <a class="sidebar-proj-a" href="#">Project3</a>
+                <a class="sidebar-proj-a" href="#">Project4</a>
+                <a class="sidebar-proj-a" href="#">Project5</a>
+                <a class="sidebar-proj-a" href="#">Project6</a>
+            </div>
         </div>
         <div class="sidebar-workexp">
             <p class="sidebar-title">Work Experience</p>
@@ -56,9 +63,64 @@
                 numquam mollitia.
             </p>
         </div>
-        
     </div>
 
+    <main>
+        <div class="main-top-section">
+            Front End Developer / Python Developer
+        </div>
+        <div class="main-section-container">
+                <div class="main-left-section">
+                    <p class="main-titles">Projects</p>
+                    <a class="main-proj-a" href="#">Project1</a>
+                    <a class="main-proj-a" href="#">Project2</a>
+                    <a class="main-proj-a" href="#">Project3</a>
+                    <a class="main-proj-a" href="#">Project4</a>
+                    <a class="main-proj-a" href="#">Project5</a>
+                    <a class="main-proj-a" href="#">Project6</a>
+                </div>
+                <div class="main-middle-section">
+                    <div class="container-1">
+                        <p class="main-titles">Work Experience</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tenetur 
+                            consectetur quia velit explicabo provident, accusamus, est eaque 
+                            ullam atque voluptate tempore modi officia suscipit iusto alias vero 
+                            numquam mollitia.
+                        </p>
+                    </div>
+                    <div class="container-2">
+                        <p class="main-titles">Open Source Work</p>
+                        <a class="container-2-a" href="https://github.com/lesliedigsby">My GitHub</a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tenetur 
+                            consectetur quia velit explicabo provident, accusamus, est eaque 
+                            ullam atque voluptate tempore modi officia suscipit iusto alias vero 
+                            numquam mollitia.
+                        </p>
+                    </div>
+                </div>
+                <div class="main-right-container">
+                    <p class="main-titles">Education</p>
+                    <p>
+                        Georgia State University
+                    </p>
+                    <ul>
+                        <li>
+                            Master of Science in Biology and Bioinformatics
+                        </li>
+                        <li>
+                            Bachelor of Science in Biology
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <footer>
+            <div class="copyright-container">
+                <p class="copyright-p">&#169; All rights reserved 2024</p>
+            </div>
+        </footer>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
