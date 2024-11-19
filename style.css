@@ -1,10 +1,20 @@
+body {
+    height: 3000px;
+}
+
 .nav-bar {
     background-color: black;
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 0;
     padding-right: 10px;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .nav-bar p {
@@ -31,4 +41,55 @@
 
 .nav-bar a.active {
     background-color: rgb(174, 110, 190);
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: rgb(71, 71, 71);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar-name, .sidebar-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar-nav-a {
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.sidebar a:hover {
+    background-color: lightslategray;
+}
+
+.sidebar-proj-a {
+    color: white;
+    text-align: center;
+    margin: 12px 12px;
+    padding: 3px 3px;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+.sidebar-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-descriptors {
+    font-size: 12px;
+    color: white;
 }
